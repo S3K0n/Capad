@@ -1,0 +1,400 @@
+@font-face {
+	font-family: 'Balqis';
+	src: url('./Balqis.ttf') format('ttf'), 
+	url('./Balqis.ttf') format('ttf');
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav.scrolled {
+  background-color: #E2AB3F;
+  color: #fff;
+}
+body.modal-open {
+    overflow: hidden;
+}
+
+.to_up {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.medium_text {
+  font-size: 24px;
+  color: black;
+}
+
+.small_text {
+  font-size: 18px;
+}
+
+.big_title {
+	font-family:'Balqis', sans-serif;
+	font-size: 250px;
+	font-weight: 400;
+}
+.medium_title {
+	font-family:'Balqis', sans-serif;
+	font-size: 96px;
+	font-weight: 400;
+	color: #E2AB3F;
+}
+.small_title {
+	font-family:'Balqis', sans-serif;
+	font-size: 86px;
+	font-weight: 400;
+	color: #E2AB3F;
+}
+
+.next, .next1 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+}
+.back, .back1 {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* header */
+header {
+  background-image: url("./img/Rectangle\ 43.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.navbar {
+  padding: 40px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.nav_list {
+  display: flex;
+  gap: 50px;
+}
+
+.nav_list li a {
+  color: black;
+}
+
+.phone {
+  display: flex;
+  gap: 10px;
+}
+
+.theme {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.thur {
+  font-style: italic;
+  display: flex;
+  justify-content: end;
+  margin-top: -70px;
+  margin-right: 80px;
+}
+
+/* wonder country */
+.country {
+  margin-top: 150px;
+}
+
+.country_theme {
+  margin-left: 200px;
+}
+.title {
+  margin-top: -35px;
+  margin-left: 200px;
+}
+.country_content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.country_slide {
+  margin-left: -14%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides, .slides1 {
+	min-width: 960px;
+    display: flex;
+    transition: transform 0.5s ease;
+    transform: translateX(0);
+}
+
+.offer__slide {
+	min-width: 960px;
+	width: 960px;
+	height: 700px;
+}
+
+.country_text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* rout */
+.route_content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.route_slider {
+  margin-left: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide_route {
+  min-width: 960px;
+  height: 1095px;
+}
+
+.route_text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.btn {
+	padding: 20px;
+	border: 1px solid #e2ab3f;
+	background-color: white;
+	cursor: pointer;
+}
+
+/* section hotel */
+.hotel {
+  margin-top: 50px;
+}
+.hotel_content {
+	margin-top: 80px;
+  display: flex;
+  gap: 100px;
+}
+.hotel_theme p {
+  margin-left: 120px;
+}
+
+.hotel_text .hotel_text2,
+.hotel_text3 {
+  margin-top: 80px;
+}
+
+.hotel_plate {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+}
+
+/* price */
+.price {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.price_title {
+  margin-top: -10px;
+  margin-left: 150px;
+}
+.price_content {
+  margin-top: 80px;
+  display: flex;
+  gap: 40px;
+}
+
+.all_inclusive {
+	width: 530px;
+}
+.not_inclusive {
+	width: 370px;
+}
+
+.balloons {
+	position: absolute;
+	z-index: -1;
+	right: 0;
+	top: 0;
+}
+
+
+
+.application_content {
+  margin-top: 150px;
+  display: flex;
+  gap: 50px;
+}
+.application_sec {
+  margin-left: 50px;
+}
+.date_text {
+  position: relative;
+  margin-top: -5px;
+  margin-left: 150px;
+  font-size: 20px;
+}
+.price_text {
+  margin-left: 120px;
+  margin-top: -10px;
+  font-size: 20px;
+}
+.price1 {
+  margin-left: 130px;
+}
+.application {
+  font-size: 30px;
+  margin-top: 100px;
+}
+.div_input {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.div_input input {
+	width: 383px;
+	height: 50px;
+	border-color: #e2ab3f;
+}
+.div_input button {
+	width: 280px;
+	height: 50px;
+}
+
+.application_text {
+  font-size: 25px;
+  border: 1px solid #e2ab3f;
+  width: 250px;
+  margin-top: 300px;
+}
+
+
+
+
+footer {
+  background-image: url(./img/Rectangle\ 42.png);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 300px;
+}
+.baloon {
+	border-radius: 20%;
+  background-image: url("./img/baloon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 370px;
+  height: 527px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.Contacts {
+	text-align: center;
+	margin-top: 90px;
+}
+.icon_phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mail_icon {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.dream_come h1 {
+	width: 600px;
+	font-size: 86px;
+	font-family: 'Balqis', sans-serif;
+	font-weight: 400;
+}
+
+.modal {
+	position: absolute;
+	z-index: 5;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 30px;
+	background-color: #e2ab3f;
+	width: 500px;
+	height: 500px;
+}
+
+.modal-overlay {
+    display: none; /* Скрытие модального окна по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Затемненный фон */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
